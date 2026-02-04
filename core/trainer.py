@@ -13,10 +13,9 @@ class Trainer:
     
     def __init__(self, symbol_pool: Dict[str, str]):
         '''
-        __init__() Initializes the Trainer object with symbol_pool.
+        __init__() Initializes the Trainer object with symbol_pool and initializes self.current_symbol.
         
         :param symbol_pool: Represents the pool of symbols being considered in the instance (example: it could be only Hiragana symbols, only Katakana symbols, or all combined).
-        :param current_symbol: Represents the current random symbol.
         '''
         self.symbol_pool = symbol_pool
         self.current_symbol: Optional[Tuple[str, str]] = None
