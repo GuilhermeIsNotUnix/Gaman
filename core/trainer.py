@@ -1,36 +1,21 @@
 import random
-from data.hiragana import HIRAGANA
-from data.katakana import KATAKANA
-import typing
 
 class Trainer:
     '''
     This class is responsible for training modes with the ability to filter the types of symbols to be considered in training (for example: only Hiragana, only Katakana, or all symbols).
+    
+    Attributes:
+        symbol_pool (dict): Represents the pool of symbols being considered in the instance (example: it could be only Hiragana symbols, only Katakana symbols, or all combined).
+        current_symbol: Represents the current random symbol.
+        
     '''
     
-    def get_hiragana_only() -> dict:
+    def __init__(self, symbol_pool: dict):
         '''
-        get_hiragana_only() get and return the Hiragana symbols dict modeled on data/.
+        __init__() Initializes the Trainer object with symbol_pool.
         
-        :return: Hiragana dictionary with its symbols and its romaji meaning
-        :rtype: dict
+        :param symbol_pool: Represents the pool of symbols being considered in the instance (example: it could be only Hiragana symbols, only Katakana symbols, or all combined).
+        :param current_symbol: Represents the current random symbol.
         '''
-        return HIRAGANA
-    
-    def get_katakana_only() -> dict:
-        '''
-        get_katakana_only() get and return the Katakana symbols dict modeled on data/.
-        
-        :return: Katakana dictionary with its symbols and its romaji meaning
-        :rtype: dict
-        '''
-        return KATAKANA
-    
-    def get_all_symbols_mixed() -> dict:
-        '''
-        get_all_symbols_mixed() get and return a dict that combines all the combined dicts of symbols (currently a combination of Hiragana and Katakana).
-        
-        :return: Katakana dictionary with its symbols and its romaji meaning
-        :rtype: dict
-        '''
-        return HIRAGANA | KATAKANA
+        self.symbol_pool = symbol_pool
+        self.current_symbol = None
