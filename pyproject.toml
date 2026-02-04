@@ -1,7 +1,7 @@
 [project]
 name = "gaman"
 version = "0.1.0"
-description = "Add your description here"
+description = "Gaman is an open source application for training and memorizing Hiragana and Katakana, focused on visual recognition, repetition, and direct association between Japanese symbols and their corresponding romaji."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
