@@ -3,7 +3,7 @@ from typing import Dict, Tuple, Optional
 
 class Trainer:
     '''
-    This class is responsible for training modes with the ability to filter the types of symbols to be considered in training (for example: only Hiragana, only Katakana, or all symbols).
+    This class is responsible for the logic of training modes with filtered or unfiltered symbols to be considered in training (for example: only Hiragana, only Katakana, or all symbols).
     
     Attributes:
         symbol_pool (dict): Represents the pool of symbols being considered in the instance (example: it could be only Hiragana symbols, only Katakana symbols, or all combined).
