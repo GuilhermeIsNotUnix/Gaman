@@ -5,7 +5,7 @@ import typing
 
 class Trainer:
     '''
-    Trainer
+    This class is responsible for training modes with the ability to filter the types of symbols to be considered in training (for example: only Hiragana, only Katakana, or all symbols).
     '''
     
     def get_hiragana_only() -> dict:
