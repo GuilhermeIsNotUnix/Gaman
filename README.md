@@ -38,7 +38,8 @@ The project is built to evolve incrementally while maintaining a clean and maint
 
 - [x] Scope definition
 - [x] Hiragana and Katakana data modeling
-- [ ] Training engine implementation
+- [x] Training engine implementation
+- [ ] Initial user interface (CLI)
 - [ ] Initial user interface (Flet)
 - [ ] Training modes (Hiragana, Katakana, mixed)
 
